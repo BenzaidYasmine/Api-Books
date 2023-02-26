@@ -1,0 +1,187 @@
+/* Asset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: cursive;
+    color: #0e0d0d;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+    background: #6c301f;
+    overflow: auto;
+    /* lors du click sur les elements , ils auront la même hauteur que le header*/
+    line-height: 1.7em;
+}
+
+.header nav h1 {
+    float: left;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.header nav h1 {
+    color: #d78831;
+}
+
+.header nav ul {
+    float: right;
+    /* pour ne plus avoir les petits rongs*/
+    list-style: none;
+}
+
+.header nav ul li {
+    float: left;
+}
+
+.header nav ul li a {
+    color: #d78831;
+    padding: 20px;
+    /*laisser un peu d'espace entre les éléments */
+    display: block;
+}
+
+.header nav ul li a:hover,
+.active {
+    background: #d29c62;
+    color: #6c301f;
+}
+
+/*Section Biblio*/
+
+.bi {
+    /*la hauteur du background */
+    height: 700px;
+    background-color: #d29c62;
+    background-size: cover;
+    /*pour couvrir toute l'image */
+    text-align: center;
+    display: flex;
+}
+
+.bi-content {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    margin-left: 400px;
+}
+
+.library {
+    height: 500px;
+    width: 500px;
+    border: 5mm ridge #583616;
+    border-right-width: 6mm;
+    border-top-width: 7mm;
+    background-color: #321a04;
+    margin-top: -35px;
+    border-radius: 14px;
+    display: flex;
+    flex-flow: row wrap;
+
+
+}
+
+
+.book {
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+
+    height: 148px;
+    width: 57px;
+    /*Orientation du titre du livre*/
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+
+
+    border-width: thick;
+    border-right-width: 2em;
+    border: solid 2px rgb(7, 18, 7);
+
+}
+
+.book-one {
+    background-color: green;
+}
+
+
+.book-tree {
+    background-color: red;
+}
+
+* .book-two {
+    background-color: yellow;
+}
+
+.book-four {
+    background-color: rgb(234, 53, 83);
+}
+
+
+
+.pied-droit {
+    height: 50px;
+    width: 20px;
+    margin: 532px 0px 23px -30px;
+    background-color: hsl(28, 58%, 12%);
+    ;
+    border-right: 5px solid #583616;
+    border-radius: 5px 10% 4em 8px;
+}
+
+.pied-droit-two {
+    height: 50px;
+    width: 20px;
+    margin: 532px 0px 23px -45px;
+    background-color: hsl(28, 58%, 12%);
+    ;
+    border-right: 5px solid #583616;
+    border-radius: 5px 10% 4em 8px;
+}
+
+.pied-gauche {
+    height: 50px;
+    width: 20px;
+    margin: 530px 0px 23px -454px;
+    background-color: hsl(28, 58%, 12%);
+    border-left: 5px solid #583616;
+    border-radius: 5px 10% 4em 8px;
+}
+
+
+.pied-gauche-two {
+    height: 50px;
+    width: 20px;
+    margin: 21px 5px -483px;
+    background-color: hsl(28, 58%, 12%);
+    border-left: 5px solid #583616;
+    border-radius: 5px 10% 4em 8px;
+}
+
+/* footer */
+
+footer {
+    background: #6c301f;
+    color: #d78831;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0px;
+}
