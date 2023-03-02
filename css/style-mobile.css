@@ -1,0 +1,13 @@
+.header nav ul {
+    float: left;
+    /* pour ne plus avoir les petits rongs*/
+    list-style: none;
+}
+
+.search-barre {
+    margin-top: 70px;
+}
+
+.lib{
+    margin-top: 35px
+}
