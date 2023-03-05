@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
             data-auto-a11y="true"></script>
+        <script src="https://kit.fontawesome.com/45e38e596f.js"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" media="only screen and (max-width:500px)"
             href="css/style-mobile.css">
         <title>Biographie</title>
@@ -16,7 +18,7 @@
             <!--Header-->
             <header class="header">
                 <nav>
-                    <h1>BU Bordeaux </h1>
+                    <h1>Biographie</h1>
                     <ul>
                         <li><a href="#acceuil">Acceuil</a></li>
                         <li><a href="#adresse">Adresse</a></li>
@@ -30,52 +32,88 @@
                     <div class=""></div>
                     <div class="library-search-content">
                         <form role="search">
-                            <input class="search-barre" type="search"
-                                id="maRecherche" name="q"
+                            <input id="searchbar"
+                                class="search-barre"
+                                type="text"
                                 placeholder="Albert Camus"
                                 aria-label="Rechercher dans la
                                 bibliothèque">
+                            <a href="#paper" onclick="httpGet_search_book()"
+                                class="search-icon"> Rechercher</a>
+                        </form>
 
-                            <svg class="search-icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512
-                                512">
-                                <path d="M416 208c0 45.9-14.9 88.3-40
-                                    122.7L502.6
-                                    457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8
-                                    12.5-45.3
-                                    0L330.7 376c-34.4 25.2-76.8 40-122.7
-                                    40C93.1 416
-                                    0 322.9 0 208S93.1 0 208 0S416 93.1 416
-                                    208zM208
-                                    352a144 144 0 1 0 0-288 144 144 0 1 0 0
-                                    288z"/>
-                                </svg>
-                            </form>
-
-                            <div class="lib">
-                                <div class="book book-one">livre 1</div>
-                                <div class="book book-tree">livre 2</div>
-                                <div class="book book-two">3</div>
-                                <div class="book book-four">4</div>
-                                <div class="book book-two">5</div>
-                                <div class="book book-four">6</div>
-                                <div class="book book-tree">7</div>
-                                <div class="book book-one">livre 1</div>
-                                <div class="book book-tree">livre 2</div>
-                                <div class="book book-two">3</div>
-                                <div class="book book-four">4</div>
-                                <div class="book book-tree">livre 2</div>
-                                <div class="pp">
-                                    <div class="pied-droit"></div>
-                                    <div class="pied-gauche"></div>
-                                </div>
+                        <div class="lib">
+                            <div class="book book-one">Marcel Proust</div>
+                            <div class="book book-tree">Albert Camus</div>
+                            <div class="book book-two">Léon Bloy</div>
+                            <div class="book book-four">Fiodor Dostoïevski</div>
+                            <div class="book book-two">Arthur Rimbaud</div>
+                            <div class="book book-four">Harry Potter</div>
+                            <div class="book book-tree">Paulo Coelho</div>
+                            <div class="book book-one">Agatha Christie</div>
+                            <div class="book book-tree"> Terry Pratchett</div>
+                            <div class="book book-two">Robert C. Martin</div>
+                            <div class="book book-four">Pierre Desproges</div>
+                            <div class="book book-tree">Stefan Zweig</div>
+                            <div class="pp">
+                                <div class="pied-droit"></div>
+                                <div class="pied-gauche"></div>
                             </div>
                         </div>
-                        <div class=""></div>
+                    </div>
+                    <div class=""></div>
+                </div>
+
+                <div id="paper" class="vp-paper" style="display: none;">
+                    <div class="library-search-content">
+                        <div class="card">
+                            <span class="card-title">
+                                <h1 class="card-text">Bienvenue à la biographie
+                                    de :</h1>
+                            </span>
+                            <p class="sub-title"> NOM de l'auteur : <span
+                                    class="title"
+                                    id="nom"></span></p>
+                            <p class="sub-title"> Date de naissance : <span
+                                    class="title"
+                                    id="dob"></span></p>
+                            <p class="sub-title"> Date de décès : <span
+                                    class="title"
+                                    id="dod"></span></p>
+
+                            <p class="sub-title"> Top livre :
+                                <span
+                                    class="title"
+                                    id="top">
+                                </span>
+                            </p>
+                            <p class="sub-title"> Œuvres principales :
+                                <br/>
+                                    <span
+                                        class="title"
+                                        id="top_subject"></span></p>
+
+
+                            </div>
+
+                            <button href="#" onclick="closeModal()"
+                                class="modal_close ">
+                                fermer
+                                &times;
+                            </button>
+                     
+
+                        </div>
+                    </div>
+                    <div>
+
+
                     </div>
                 </section>
 
+
+
+                <script type="text/javascript" src="../js/index.js"></script>
                 <footer>
                     <p> &copy; Copyright-2023 - Jane</p>
                 </footer>

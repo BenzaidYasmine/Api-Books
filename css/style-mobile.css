@@ -11,3 +11,17 @@
 .lib{
     margin-top: 35px
 }
+
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50; right: 0;
+    bottom: 10; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
