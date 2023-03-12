@@ -126,7 +126,7 @@ h3 {
 
 /*ses changement s'appliquent quand la taille de l'écran est < 780px*/
 /*Ecran très grand plus de 20pouces*/
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 800px) {
     .vp-content {
         min-height: 95vh;
         background-color: #d29c62;
@@ -135,10 +135,10 @@ h3 {
 }
 
 /*mobile**/
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 414px) {
     .vp-content {
         min-height: 76vh;    
-        background-color: #d29c62;
+        background-color: #f22405;
     }
 
 }
